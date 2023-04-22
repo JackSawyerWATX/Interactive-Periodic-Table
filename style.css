@@ -1,0 +1,852 @@
+.periodic-table {
+	display: grid;
+	grid-template-columns: repeat(18, 500px);
+	grid-template-rows: repeat(24, 50px);
+	gap: 1px;
+	background-color: #ffffff;
+}
+
+.element {
+	position: relative;
+	background-color: #393939;
+	border: 1px solid #000;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 200;
+	font-family: 'Courier New', Courier, monospace;
+	color: #ffffff;
+	transition: all 0.3s ease-in-out;
+}
+
+.element:hover {
+	transform: scale(1.2);
+}
+
+.title {
+	position: absolute;
+	top: 100px;
+	left: 400px;
+	font-size: 36px;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.color-key {
+	position: absolute;
+	width: 265px;
+	top: 810px;
+	left: 235px;
+	font-size: 15px;
+	
+}
+
+.element[data-description="Reactive Nonmetal"] {
+	background-color: #800015;
+}
+
+.element[data-description="Noble Gas"] {
+	background-color: #800080;
+}
+
+.element[data-description="Alkali Metal"] {
+	background-color: #2A0080;
+}
+
+.element[data-description="Alkaline Earth Metal"] {
+	background-color: #006A80;
+}
+
+.element[data-description="Post-Transition Metal"] {
+	background-color: #A67B5B;
+}
+
+.element[data-description="Transition Metal"] {
+	background-color: #808000;
+}
+
+.element[data-description="Metalloid"] {
+	background-color: #008055;
+}
+
+.element[data-description="Lanthanides"] {
+	background-color: #804000;
+}
+
+.element[data-description="Actinide"] {
+	background-color: #800000;
+}
+
+.element[data-description="Unknown Properties"] {
+	background-color: #808080;
+}
+
+.element .symbol {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.element-details {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	transition: all .2s ease-in;
+}
+
+.element-details .element-details-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.element-details .element-details-header .element-details-symbol {
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.element-details .element-details-header .element-details-name {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 8px;
+}
+
+.element-details .element-details-header .element-details-close {
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.element-details .element-details-body p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.element-details .element-details-body p:first-child {
+    margin-top: 12px;
+}
+
+.element-details .element-details-body p:last-child {
+    margin-bottom: 10px;
+}
+
+.element {
+    display: block;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+#H {
+    position: absolute;
+    top: 100px;
+    left: 120px; 
+}
+
+#He {
+    position: absolute;
+    top: 100px;
+    left: 1920px; 
+}
+
+#Li {
+    position: absolute;
+    top: 200px;
+    left: 120px;
+}
+
+#Be {
+    position: absolute;
+    top: 200px;
+    left: 220px;
+}
+
+#B {
+    position: absolute;
+    top: 200px;
+    left: 1420px;
+}
+
+#C {
+    position: absolute;
+    top: 200px;
+    left: 1520px;
+}
+
+#N {
+    position: absolute;
+    top: 200px;
+    left: 1620px;
+}
+
+#O {
+    position: absolute;
+    top: 200px;
+    left: 1720px;
+}
+
+#F {
+    position: absolute;
+    top: 200px;
+    left: 1820px;
+}
+
+#Ne {
+    position: absolute;
+    top: 200px;
+    left: 1920px;
+}
+
+#Na {
+    position: absolute;
+    top: 300px;
+    left: 120px;
+}
+
+#Mg {
+    position: absolute;
+    top: 300px;
+    left: 220px;
+}
+
+#Al {
+    position: absolute;
+    top: 300px;
+    left: 1420px;
+}
+
+#Si {
+    position: absolute;
+    top: 300px;
+    left: 1520px;
+}
+
+#P {
+    position: absolute;
+    top: 300px;
+    left: 1620px;
+}
+
+#S {
+    position: absolute;
+    top: 300px;
+    left: 1720px;
+}
+
+#Cl {
+    position: absolute;
+    top: 300px;
+    left: 1820px;
+}
+
+#Ar {
+    position: absolute;
+    top: 300px;
+    left: 1920px;
+}
+
+#K {
+    position: absolute;
+    top: 400px;
+    left: 120px;
+}
+
+#Ca {
+    position: absolute;
+    top: 400px;
+    left: 220px;
+}
+
+#Sc {
+    position: absolute;
+    top: 400px;
+    left: 320px;
+}
+
+#Ti {
+    position: absolute;
+    top: 400px;
+    left: 520px;
+}
+
+#V {
+    position: absolute;
+    top: 400px;
+    left: 620px;
+}
+
+#Cr {
+    position: absolute;
+    top: 400px;
+    left: 720px;
+}
+
+#Mn {
+    position: absolute;
+    top: 400px;
+    left: 820px;
+}
+
+#Fe {
+    position: absolute;
+    top: 400px;
+    left: 920px;
+}
+
+#Co {
+    position: absolute;
+    top: 400px;
+    left: 1020px;
+}
+
+#Ni {
+    position: absolute;
+    top: 400px;
+    left: 1120px;
+}
+
+#Cu {
+    position: absolute;
+    top: 400px;
+    left: 1220px;
+}
+
+#Zn {
+    position: absolute;
+    top: 400px;
+    left: 1320px;
+}
+
+#Ga {
+    position: absolute;
+    top: 400px;
+    left: 1420px;
+}
+
+#Ge {
+    position: absolute;
+    top: 400px;
+    left: 1520px;
+}
+
+#As {
+    position: absolute;
+    top: 400px;
+    left: 1620px;
+}
+
+#Se {
+    position: absolute;
+    top: 400px;
+    left: 1720px;
+}
+
+#Br {
+    position: absolute;
+    top: 400px;
+    left: 1820px;
+}
+
+#Kr {
+    position: absolute;
+    top: 400px;
+    left: 1920px;
+}
+
+#Rb {
+    position: absolute;
+    top: 500px;
+    left: 120px;
+}
+
+#Sr {
+    position: absolute;
+    top: 500px;
+    left: 220px;
+}
+
+#Y {
+    position: absolute;
+    top: 500px;
+    left: 320px;
+}
+
+#Zr {
+    position: absolute;
+    top: 500px;
+    left: 520px;
+}
+
+#Nb {
+    position: absolute;
+    top: 500px;
+    left: 620px;
+}
+
+#Mo {
+    position: absolute;
+    top: 500px;
+    left: 720px;
+}
+
+#Tc {
+    position: absolute;
+    top: 500px;
+    left: 820px;
+}
+
+#Ru {
+    position: absolute;
+    top: 500px;
+    left: 920px;
+}
+
+#Rh {
+    position: absolute;
+    top: 500px;
+    left: 1020px;
+}
+
+#Pd {
+    position: absolute;
+    top: 500px;
+    left: 1120px;
+}
+
+#Ag {
+    position: absolute;
+    top: 500px;
+    left: 1220px;
+}
+
+#Cd {
+    position: absolute;
+    top: 500px;
+    left: 1320px;
+}
+
+#In {
+    position: absolute;
+    top: 500px;
+    left: 1420px;
+}
+
+#Sn {
+    position: absolute;
+    top: 500px;
+    left: 1520px;
+}
+
+#Sb {
+    position: absolute;
+    top: 500px;
+    left: 1620px;
+}
+
+#Te {
+    position: absolute;
+    top: 500px;
+    left: 1720px;
+}
+
+#I {
+    position: absolute;
+    top: 500px;
+    left: 1820px;
+}
+
+#Xe {
+    position: absolute;
+    top: 500px;
+    left: 1920px;
+}
+
+#Cs {
+    position: absolute;
+    top: 600px;
+    left: 120px;
+}
+
+#Ba {
+    position: absolute;
+    top: 600px;
+    left: 220px;
+}
+
+#La {
+    position: absolute;
+    top: 600px;
+    left: 320px;
+}
+
+#Ce {
+    position: absolute;
+    top: 900px;
+    left: 520px;
+}
+
+#Pr {
+    position: absolute;
+    top: 900px;
+    left: 620px;
+}
+
+#Nd {
+    position: absolute;
+    top: 900px;
+    left: 720px;
+}
+
+#Pm {
+    position: absolute;
+    top: 900px;
+    left: 820px;
+}
+
+#Sm {
+    position: absolute;
+    top: 900px;
+    left: 920px;
+}
+
+#Eu {
+    position: absolute;
+    top: 900px;
+    left: 1020px;
+}
+
+#Gd {
+    position: absolute;
+    top: 900px;
+    left: 1120px;
+}
+
+#Tb {
+    position: absolute;
+    top: 900px;
+    left: 1220px;
+}
+
+#Dy {
+    position: absolute;
+    top: 900px;
+    left: 1320px;
+}
+
+#Ho {
+    position: absolute;
+    top: 900px;
+    left: 1420px;
+}
+
+#Er {
+    position: absolute;
+    top: 900px;
+    left: 1520px;
+}
+
+#Tm {
+    position: absolute;
+    top: 900px;
+    left: 1620px;
+}
+
+#Yb {
+    position: absolute;
+    top: 900px;
+    left: 1720px;
+}
+
+#Lu {
+    position: absolute;
+    top: 900px;
+    left: 1820px;
+}
+
+#Hf {
+    position: absolute;
+    top: 600px;
+    left: 520px;
+}
+
+#Ta {
+    position: absolute;
+    top: 600px;
+    left: 620px;
+}
+
+#W {
+    position: absolute;
+    top: 600px;
+    left: 720px;
+}
+
+#Re {
+    position: absolute;
+    top: 600px;
+    left: 820px;
+}
+
+#Os {
+    position: absolute;
+    top: 600px;
+    left: 920px;
+}
+
+#Ir {
+    position: absolute;
+    top: 600px;
+    left: 1020px;
+}
+
+#Pt {
+    position: absolute;
+    top: 600px;
+    left: 1120px;
+}
+
+#Au {
+    position: absolute;
+    top: 600px;
+    left: 1220px;
+}
+
+#Hg {
+    position: absolute;
+    top: 600px;
+    left: 1320px;
+}
+
+#Tl {
+    position: absolute;
+    top: 600px;
+    left: 1420px;
+}
+
+#Pb {
+    position: absolute;
+    top: 600px;
+    left: 1520px;
+}
+
+#Bi {
+    position: absolute;
+    top: 600px;
+    left: 1620px;
+}
+
+#Po {
+    position: absolute;
+    top: 600px;
+    left: 1720px;
+}
+
+#At {
+    position: absolute;
+    top: 600px;
+    left: 1820px;
+}
+
+#Rn {
+    position: absolute;
+    top: 600px;
+    left: 1920px;
+}
+
+#Fr {
+    position: absolute;
+    top: 700px;
+    left: 120px;
+}
+
+#Ra {
+    position: absolute;
+    top: 700px;
+    left: 220px;
+}
+
+#Ac {
+    position: absolute;
+    top: 700px;
+    left: 320px;
+}
+
+#Th {
+    position: absolute;
+    top: 1000px;
+    left: 520px;
+}
+
+#Pa {
+    position: absolute;
+    top: 1000px;
+    left: 620px;
+}
+
+#U {
+    position: absolute;
+    top: 1000px;
+    left: 720px;
+}
+
+#Np {
+    position: absolute;
+    top: 1000px;
+    left: 820px;
+}
+
+#Pu {
+    position: absolute;
+    top: 1000px;
+    left: 920px;
+}
+
+#Am {
+    position: absolute;
+    top: 1000px;
+    left: 1020px;
+}
+
+#Cm {
+    position: absolute;
+    top: 1000px;
+    left: 1120px;
+}
+
+#Bk {
+    position: absolute;
+    top: 1000px;
+    left: 1220px;
+}
+
+#Cf {
+    position: absolute;
+    top: 1000px;
+    left: 1320px;
+}
+
+#Es {
+    position: absolute;
+    top: 1000px;
+    left: 1420px;
+}
+
+#Fm {
+    position: absolute;
+    top: 1000px;
+    left: 1520px;
+}
+
+#Md {
+    position: absolute;
+    top: 1000px;
+    left: 1620px;
+}
+
+#No {
+    position: absolute;
+    top: 1000px;
+    left: 1720px;
+}
+
+#Lr {
+    position: absolute;
+    top: 1000px;
+    left: 1820px;
+}
+
+#Rf {
+    position: absolute;
+    top: 700px;
+    left: 520px;
+}
+
+#Db {
+    position: absolute;
+    top: 700px;
+    left: 620px;
+}
+
+#Sg {
+    position: absolute;
+    top: 700px;
+    left: 720px;
+}
+
+#Bh {
+    position: absolute;
+    top: 700px;
+    left: 820px;
+}
+
+#Hs {
+    position: absolute;
+    top: 700px;
+    left: 920px;
+}
+
+#Mt {
+    position: absolute;
+    top: 700px;
+    left: 1020px;
+}
+
+#Ds {
+    position: absolute;
+    top: 700px;
+    left: 1120px;
+}
+
+#Rg {
+    position: absolute;
+    top: 700px;
+    left: 1220px;
+}
+
+#Cn {
+    position: absolute;
+    top: 700px;
+    left: 1320px;
+}
+
+#Nh {
+    position: absolute;
+    top: 700px;
+    left: 1420px;
+}
+
+#Fl {
+    position: absolute;
+    top: 700px;
+    left: 1520px;
+}
+
+#Mc {
+    position: absolute;
+    top: 700px;
+    left: 1620px;
+}
+
+#Lv {
+    position: absolute;
+    top: 700px;
+    left: 1720px;
+}
+
+#Ts {
+    position: absolute;
+    top: 700px;
+    left: 1820px;
+}
+
+#Og {
+    position: absolute;
+    top: 700px;
+    left: 1920px;
+}

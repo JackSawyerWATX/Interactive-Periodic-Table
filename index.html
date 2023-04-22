@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Interactive Periodic Table</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div class="periodic-table">
+
+		<div class="title">
+			<div class="name">
+				<H1>Periodic Table</H1>
+				<H3>of the Known Elements</H3>
+			</div>
+					</div>
+			<div class="color-key">
+				<p style="border-right:18px solid #800015;">Reactive Nonmetal</p>
+				<p style="border-right:18px solid #800080;">Noble Gas</p>
+				<p style="border-right:18px solid #2A0080;">Alkali Metal</p>
+				<p style="border-right:18px solid #006A80;">Alkaline Earth Metal</p>
+				<p style="border-right:18px solid #A67B5B;">Post-Transition Metal</p>
+				<p style="border-right:18px solid #808000;">Transition Metal</p>
+				<p style="border-right:18px solid #008055;">Metalloid</p>
+				<p style="border-right:18px solid #804000;">Lanthanides</p>
+				<p style="border-right:18px solid #800000;">Actinide</p>
+				<p style="border-right:18px solid #808080;">Unknown Properties</p>
+			</div>
+
+
+		<div class="element" id="H" data-group="1" data-atomic-mass="1.0078" data-atomic-number="1" data-name="Hydrogen"
+			data-description="Reactive Nonmetal">
+			<span class="symbol">H</span>
+		</div>
+
+		<div class="element" id="He" data-group="18" data-atomic-weight="4.003" data-atomic-number="2"
+			data-name="Helium" data-description="Noble Gas">
+			<span class="symbol">He</span>
+		</div>
+
+		<div class="element" id="Li" data-group="1" data-atomic-weight="6.9410" data-atomic-number="3"
+			data-name="Lithum" data-description="Alkali Metal">
+			<span class="symbol">Li</span>
+		</div>
+
+		<div class="element" id="Be" data-group="2" data-atomic-weight="9.0122" data-atomic-number="4"
+			data-name="Beryllium" data-description="Alkaline Earth Metal">
+			<span class="symbol">Be</span>
+		</div>
+
+		<div class="element" id="B" data-group="13" data-atomic-weight="10.811" data-atomic-number="5" 
+			data-name="Boron" data-description="Metalloid">
+			<span class="symbol">B</span>
+		</div>
+
+		<div class="element" id="C" data-group="14" data-atomic-weight="12.001" data-atomic-number="6"
+			data-name="Carbon" data-description="Reactive Nonmetal">
+			<span class="symbol">C</span>
+		</div>
+
+		<div class="element" id="N" data-group="15" data-atomic-weight="14.007" data-atomic-number="7"
+			data-name="Nitrogen" data-description="Reactive Nonmetal">
+			<span class="symbol">N</span>
+		</div>
+
+		<div class="element" id="O" data-group="16" data-atomic-weight="15.999" data-atomic-number="8"
+			data-name="Oxygen" data-description="Reactive Nonmetal">
+			<span class="symbol">O</span>
+		</div>
+
+		<div class="element" id="F" data-group="17" data-atomic-weight="18.998" data-atomic-number="9"
+			data-name="Fluorine" data-description="Reactive Nonmetal">
+			<span class="symbol">F</span>
+		</div>
+
+		<div class="element" id="Ne" data-group="18" data-atomic-weight="20.180" data-atomic-number="10"
+			data-name="Neon" data-description="Noble Gas">
+			<span class="symbol">Ne</span>
+		</div>
+
+		<div class="element" id="Na" data-group="1" data-atomic-weight="22.990" data-atomic-number="11"
+			data-name="Sodium" data-description="Alkali Metal">
+			<span class="symbol">Na</span>
+		</div>
+
+		<div class="element" id="Mg" data-group="2" data-atomic-weight="24.305" data-atomic-number="12"
+			data-name="Magnesium" data-description="Alkaline Earth Metal">
+			<span class="symbol">Mg</span>
+		</div>
+
+		<div class="element" id="Al" data-group="13" data-atomic-weight="26.982" data-atomic-number="13"
+			data-name="Aluminium" data-description="Post-Transition Metal">
+			<span class="symbol">Al</span>
+		</div>
+
+		<div class="element" id="Si" data-group="14" data-atomic-weight="28.086" data-atomic-number="14"
+			data-name="Silicon" data-description="Metalloid">
+			<span class="symbol">Si</span>
+		</div>
+
+		<div class="element" id="P" data-group="15" data-atomic-weight="30.974" data-atomic-number="15"
+			data-name="Phosphorus" data-description="Reactive Nonmetal">
+			<span class="symbol">P</span>
+		</div>
+
+		<div class="element" id="S" data-group="16" data-atomic-weight="32.065" data-atomic-number="16"
+			data-name="Sulfur" data-description="Reactive Nonmetal">
+			<span class="symbol">S</span>
+		</div>
+
+		<div class="element" id="Cl" data-group="17" data-atomic-weight="35.453" data-atomic-number="17"
+			data-name="Chlorine" data-description="Reactive Nonmetal">
+			<span class="symbol">Cl</span>
+		</div>
+
+		<div class="element" id="Ar" data-group="18" data-atomic-weight="39.948" data-atomic-number="18"
+			data-name="Argon" data-description="Noble Gas">
+			<span class="symbol">Ar</span>
+		</div>
+
+		<div class="element" id="K" data-group="1" data-atomic-weight="39.098" data-atomic-number="19"
+			data-name="Potassium" data-description="Alkali Metal">
+			<span class="symbol">K</span>
+		</div>
+
+		<div class="element" id="Ca" data-group="2" data-atomic-weight="40.078" data-atomic-number="20"
+			data-name="Calcium" data-description="Alkaline Earth Metal">
+			<span class="symbol">Ca</span>
+		</div>
+
+		<div class="element" id="Sc" data-group="3" data-atomic-weight="44.956" data-atomic-number="21"
+			data-name="Scandium" data-description="Transition Metal">
+			<span class="symbol">Sc</span>
+		</div>
+
+		<div class="element" id="Ti" data-group="4" data-atomic-weight="47.867" data-atomic-number="22"
+			data-name="Titanium" data-description="Transition Metal">
+			<span class="symbol">Ti</span>
+		</div>
+
+		<div class="element" id="V" data-group="5" data-atomic-weight="50.942" data-atomic-number="23"
+			data-name="Vanadium" data-description="Transition Metal">
+			<span class="symbol">V</span>
+		</div>
+
+		<div class="element" id="Cr" data-group="6" data-atomic-weight="51.996" data-atomic-number="24"
+			data-name="Chromium" data-description="Transition Metal">
+			<span class="symbol">Cr</span>
+		</div>
+
+		<div class="element" id="Mn" data-group="7" data-atomic-weight="54.938" data-atomic-number="25"
+			data-name="Manganese" data-description="Transition Metal">
+			<span class="symbol">Mn</span>
+		</div>
+
+		<div class="element" id="Fe" data-group="8" data-atomic-weight="55.845" data-atomic-number="26" 
+			data-name="Iron" data-description="Transition Metal">
+			<span class="symbol">Fe</span>
+		</div>
+
+		<div class="element" id="Co" data-group="9" data-atomic-weight="58.933" data-atomic-number="27"
+			data-name="Cobalt" data-description="Transition Metal">
+			<span class="symbol">Co</span>
+		</div>
+
+		<div class="element" id="Ni" data-group="10" data-atomic-weight="58.693" data-atomic-number="28"
+			data-name="Nickel" data-description="Transition Metal">
+			<span class="symbol">Al</span>
+		</div>
+
+		<div class="element" id="Cu" data-group="11" data-atomic-weight="63.546" data-atomic-number="29"
+			data-name="Copper" data-description="Transition Metal">
+			<span class="symbol">Cu</span>
+		</div>
+
+		<div class="element" id="Zn" data-group="12" data-atomic-weight="65.380" data-atomic-number="30"
+			data-name="Zinc" data-description="Transition Metal">
+			<span class="symbol">Zn</span>
+		</div>
+
+		<div class="element" id="Ga" data-group="13" data-atomic-weight="69.723" data-atomic-number="31"
+			data-name="Gallium" data-description="Post-Transition Metal">
+			<span class="symbol">Ga</span>
+		</div>
+
+		<div class="element" id="Ge" data-group="14" data-atomic-weight="72.640" data-atomic-number="32"
+			data-name="Germanium" data-description="Metalloid">
+			<span class="symbol">Ge</span>
+		</div>
+
+		<div class="element" id="As" data-group="15" data-atomic-weight="74.922" data-atomic-number="33"
+			data-name="Arsenic" data-description="Metalloid">
+			<span class="symbol">As</span>
+		</div>
+
+		<div class="element" id="Se" data-group="16" data-atomic-weight="78.960" data-atomic-number="34"
+			data-name="Selenium" data-description="Reactive Nonmetal">
+			<span class="symbol">Se</span>
+		</div>
+
+		<div class="element" id="Br" data-group="17" data-atomic-weight="79.904" data-atomic-number="35"
+			data-name="Bromine" data-description="Reactive Nonmetal">
+			<span class="symbol">Br</span>
+		</div>
+
+		<div class="element" id="Kr" data-group="18" data-atomic-weight="83.798" data-atomic-number="36"
+			data-name="Krypton" data-description="Noble Gas">
+			<span class="symbol">Kr</span>
+		</div>
+
+		<div class="element" id="Rb" data-group="13" data-atomic-weight="85.468" data-atomic-number="37"
+			data-name="Rubidium" data-description="Alkali Metal">
+			<span class="symbol">Rb</span>
+		</div>
+
+		<div class="element" id="Sr" data-group="13" data-atomic-weight="87.620" data-atomic-number="38"
+			data-name="Stronium" data-description="Alkaline Earth Metal">
+			<span class="symbol">Sr</span>
+		</div>
+
+		<div class="element" id="Y" data-group="13" data-atomic-weight="88.906" data-atomic-number="39"
+			data-name="Yttrium" data-description="Transition Metal">
+			<span class="symbol">Y</span>
+		</div>
+
+		<div class="element" id="Zr" data-group="13" data-atomic-weight="91.224" data-atomic-number="40"
+			data-name="Zirconium" data-description="Transition Metal">
+			<span class="symbol">Zr</span>
+		</div>
+
+		<div class="element" id="Nb" data-group="13" data-atomic-weight="92.906" data-atomic-number="41"
+			data-name="Niobium" data-description="Transition Metal">
+			<span class="symbol">Nb</span>
+		</div>
+
+		<div class="element" id="Mo" data-group="13" data-atomic-weight="95.950" data-atomic-number="42"
+			data-name="Molybdenum" data-description="Transition Metal">
+			<span class="symbol">Mo</span>
+		</div>
+
+		<div class="element" id="Tc" data-group="13" data-atomic-weight="98.001" data-atomic-number="43"
+			data-name="Technetium" data-description="Transition Metal">
+			<span class="symbol">Tc</span>
+		</div>
+
+		<div class="element" id="Ru" data-group="13" data-atomic-weight="101.07" data-atomic-number="44"
+			data-name="Ruthenium" data-description="Transition Metal">
+			<span class="symbol">Ru</span>
+		</div>
+
+		<div class="element" id="Rh" data-group="13" data-atomic-weight="102.91" data-atomic-number="45"
+			data-name="Rhodium" data-description="Transition Metal">
+			<span class="symbol">Rh</span>
+		</div>
+
+		<div class="element" id="Pd" data-group="13" data-atomic-weight="106.42" data-atomic-number="46"
+			data-name="Palladium" data-description="Transition Metal">
+			<span class="symbol">Pd</span>
+		</div>
+
+		<div class="element" id="Ag" data-group="13" data-atomic-weight="107.87" data-atomic-number="47"
+			data-name="Silver" data-description="Transition Metal">
+			<span class="symbol">Ag</span>
+		</div>
+
+		<div class="element" id="Cd" data-group="13" data-atomic-weight="112.41" data-atomic-number="48"
+			data-name="Cadmium" data-description="Transition Metal">
+			<span class="symbol">Cd</span>
+		</div>
+
+		<div class="element" id="In" data-group="13" data-atomic-weight="114.82" data-atomic-number="49"
+			data-name="Indium" data-description="Post-Transition Metal">
+			<span class="symbol">In</span>
+		</div>
+
+		<div class="element" id="Sn" data-group="13" data-atomic-weight="118.71" data-atomic-number="50" 
+			data-name="Tin" data-description="Post-Transition Metal">
+			<span class="symbol">Sn</span>
+		</div>
+
+		<div class="element" id="Sb" data-group="13" data-atomic-weight="121.76" data-atomic-number="51"
+			data-name="Antimony" data-description="Metalloid">
+			<span class="symbol">Sb</span>
+		</div>
+
+		<div class="element" id="Te" data-group="13" data-atomic-weight="127.60" data-atomic-number="52"
+			data-name="Tellurium" data-description="Metalloid">
+			<span class="symbol">Te</span>
+		</div>
+
+		<div class="element" id="I" data-group="13" data-atomic-weight="126.90" data-atomic-number="53"
+			data-name="Iodine" data-description="Reactive Nonmetal">
+			<span class="symbol">I</span>
+		</div>
+
+		<div class="element" id="Xe" data-group="13" data-atomic-weight="131.29" data-atomic-number="54"
+			data-name="Xenon" data-description="Noble Gas">
+			<span class="symbol">Xe</span>
+		</div>
+
+		<div class="element" id="Cs" data-group="13" data-atomic-weight="132.91" data-atomic-number="55"
+			data-name="Caesium" data-description="Alkali Metal">
+			<span class="symbol">Cs</span>
+		</div>
+
+		<div class="element" id="Ba" data-group="13" data-atomic-weight="137.33" data-atomic-number="56"
+			data-name="Aluminium" data-description="Alkaline Earth Metal">
+			<span class="symbol">Ba</span>
+		</div>
+
+		<div class="element" id="La" data-group="13" data-atomic-weight="138.91" data-atomic-number="57"
+			data-name="Lanthanum" data-description="Lanthanides">
+			<span class="symbol">La</span>
+		</div>
+
+		<div class="element" id="Ce" data-group="13" data-atomic-weight="140.12" data-atomic-number="58"
+			data-name="Cerium" data-description="Lanthanides">
+			<span class="symbol">Ce</span>
+		</div>
+
+		<div class="element" id="Pr" data-group="13" data-atomic-weight="140.91" data-atomic-number="59"
+			data-name="Praseodymium" data-description="Lanthanides">
+			<span class="symbol">Pr</span>
+		</div>
+
+		<div class="element" id="Nd" data-group="13" data-atomic-weight="144.24" data-atomic-number="60"
+			data-name="Neodymium" data-description="Lanthanides">
+			<span class="symbol">Nd</span>
+		</div>
+
+		<div class="element" id="Pm" data-group="13" data-atomic-weight="145.00" data-atomic-number="61"
+			data-name="Promethium" data-description="Lanthanides">
+			<span class="symbol">Pm</span>
+		</div>
+
+		<div class="element" id="Sm" data-group="13" data-atomic-weight="150.36" data-atomic-number="62"
+			data-name="Samarium" data-description="Lanthanides">
+			<span class="symbol">Sm</span>
+		</div>
+
+		<div class="element" id="Eu" data-group="13" data-atomic-weight="151.96" data-atomic-number="63"
+			data-name="Europium" data-description="Lanthanides">
+			<span class="symbol">Eu</span>
+		</div>
+
+		<div class="element" id="Gd" data-group="13" data-atomic-weight="157.25" data-atomic-number="64"
+			data-name="Gadolinium" data-description="Lanthanides">
+			<span class="symbol">Gd</span>
+		</div>
+
+		<div class="element" id="Tb" data-group="13" data-atomic-weight="158.93" data-atomic-number="65"
+			data-name="Terbium" data-description="Lanthanides">
+			<span class="symbol">Tb</span>
+		</div>
+
+		<div class="element" id="Dy" data-group="13" data-atomic-weight="162.50" data-atomic-number="66"
+			data-name="Dysprosium" data-description="Lanthanides">
+			<span class="symbol">Dy</span>
+		</div>
+
+		<div class="element" id="Ho" data-group="13" data-atomic-weight="164.93" data-atomic-number="67"
+			data-name="Holmium" data-description="Lanthanides">
+			<span class="symbol">Ho</span>
+		</div>
+
+		<div class="element" id="Er" data-group="13" data-atomic-weight="167.26" data-atomic-number="68"
+			data-name="Erbium" data-description="Lanthanides">
+			<span class="symbol">Er</span>
+		</div>
+
+		<div class="element" id="Tm" data-group="13" data-atomic-weight="168.93" data-atomic-number="69"
+			data-name="Thulium" data-description="Lanthanides">
+			<span class="symbol">Tm</span>
+		</div>
+
+		<div class="element" id="Yb" data-group="13" data-atomic-weight="173.04" data-atomic-number="70"
+			data-name="Ytterbium" data-description="Lanthanides">
+			<span class="symbol">Yb</span>
+		</div>
+
+		<div class="element" id="Lu" data-group="13" data-atomic-weight="174.97" data-atomic-number="71"
+			data-name="Lutetium" data-description="Lanthanides">
+			<span class="symbol">Lu</span>
+		</div>
+
+		<div class="element" id="Hf" data-group="13" data-atomic-weight="178.49" data-atomic-number="72"
+			data-name="Hafnium" data-description="Transition Metal">
+			<span class="symbol">Hf</span>
+		</div>
+
+		<div class="element" id="Ta" data-group="13" data-atomic-weight="180.95" data-atomic-number="73"
+			data-name="Tantalum" data-description="Transition Metal">
+			<span class="symbol">Ta</span>
+		</div>
+
+		<div class="element" id="W" data-group="13" data-atomic-weight="183.84" data-atomic-number="74"
+			data-name="Tungsten" data-description="Transition Metal">
+			<span class="symbol">W</span>
+		</div>
+
+		<div class="element" id="Re" data-group="13" data-atomic-weight="186.21" data-atomic-number="75"
+			data-name="Rhenium" data-description="Transition Metal">
+			<span class="symbol">Re</span>
+		</div>
+
+		<div class="element" id="Os" data-group="13" data-atomic-weight="190.23" data-atomic-number="76"
+			data-name="Osmium" data-description="Transition Metal">
+			<span class="symbol">Os</span>
+		</div>
+
+		<div class="element" id="Ir" data-group="13" data-atomic-weight="192.22" data-atomic-number="77"
+			data-name="Iridium" data-description="Transition Metal">
+			<span class="symbol">Ir</span>
+		</div>
+
+		<div class="element" id="Pt" data-group="13" data-atomic-weight="195.08" data-atomic-number="78"
+			data-name="Platinum" data-description="Transition Metal">
+			<span class="symbol">Pt</span>
+		</div>
+
+		<div class="element" id="Au" data-group="13" data-atomic-weight="196.97" data-atomic-number="79"
+			data-name="Gold" data-description="Transition Metal">
+			<span class="symbol">Au</span>
+		</div>
+
+		<div class="element" id="Hg" data-group="13" data-atomic-weight="200.59" data-atomic-number="80"
+			data-name="Mercury" data-description="Transition Metal">
+			<span class="symbol">Hg</span>
+		</div>
+
+		<div class="element" id="Tl" data-group="13" data-atomic-weight="204.38" data-atomic-number="81"
+			data-name="Thallium" data-description="Post-Transition Metal">
+			<span class="symbol">Tl</span>
+		</div>
+
+		<div class="element" id="Pb" data-group="13" data-atomic-weight="207.20" data-atomic-number="82"
+			data-name="Lead" data-description="Post-Transition Metal">
+			<span class="symbol">Pb</span>
+		</div>
+
+		<div class="element" id="Bi" data-group="13" data-atomic-weight="208.98" data-atomic-number="83"
+			data-name="Bismuth" data-description="Post-Transition Metal">
+			<span class="symbol">Bi</span>
+		</div>
+
+		<div class="element" id="Po" data-group="13" data-atomic-weight="209.00" data-atomic-number="84"
+			data-name="Polonium" data-description="Post-Transition Metal">
+			<span class="symbol">Po</span>
+		</div>
+
+		<div class="element" id="At" data-group="13" data-atomic-weight="210.00" data-atomic-number="85"
+			data-name="Astatine" data-description="Post-Transition Metal">
+			<span class="symbol">At</span>
+		</div>
+
+		<div class="element" id="Rn" data-group="13" data-atomic-weight="222.00" data-atomic-number="86"
+			data-name="Radon" data-description="Noble Gas">
+			<span class="symbol">Rn</span>
+		</div>
+
+		<div class="element" id="Fr" data-group="13" data-atomic-weight="223.00" data-atomic-number="87"
+			data-name="Francium" data-description="Alkali Metal">
+			<span class="symbol">Fr</span>
+		</div>
+
+		<div class="element" id="Ra" data-group="13" data-atomic-weight="226.00" data-atomic-number="88"
+			data-name="Radium" data-description="Alkaline Earth Metal">
+			<span class="symbol">Ra</span>
+		</div>
+
+		<div class="element" id="Ac" data-group="13" data-atomic-weight="227.00" data-atomic-number="89"
+			data-name="Actinium" data-description="Actinide">
+			<span class="symbol">Ac</span>
+		</div>
+
+		<div class="element" id="Th" data-group="13" data-atomic-weight="232.04" data-atomic-number="90"
+			data-name="Thorium" data-description="Actinide">
+			<span class="symbol">Th</span>
+		</div>
+
+		<div class="element" id="Pa" data-group="13" data-atomic-weight="231.04" data-atomic-number="91"
+			data-name="Protactinium" data-description="Actinide">
+			<span class="symbol">Pa</span>
+		</div>
+
+		<div class="element" id="U" data-group="13" data-atomic-weight="238.03" data-atomic-number="92"
+			data-name="Uranium" data-description="Actinide">
+			<span class="symbol">U</span>
+		</div>
+
+		<div class="element" id="Np" data-group="13" data-atomic-weight="237.05" data-atomic-number="93"
+			data-name="Neptunium" data-description="Actinide">
+			<span class="symbol">Np</span>
+		</div>
+
+		<div class="element" id="Pu" data-group="13" data-atomic-weight="244.00" data-atomic-number="94"
+			data-name="Plutonium" data-description="Actinide">
+			<span class="symbol">Pu</span>
+		</div>
+
+		<div class="element" id="Am" data-group="13" data-atomic-weight="243.00" data-atomic-number="95"
+			data-name="Americium" data-description="Actinide">
+			<span class="symbol">Am</span>
+		</div>
+
+		<div class="element" id="Cm" data-group="13" data-atomic-weight="247.00" data-atomic-number="96"
+			data-name="Curium" data-description="Actinide">
+			<span class="symbol">Cm</span>
+		</div>
+
+		<div class="element" id="Bk" data-group="13" data-atomic-weight="247.00" data-atomic-number="97"
+			data-name="Berkelium" data-description="Actinide">
+			<span class="symbol">Bk</span>
+		</div>
+
+		<div class="element" id="Cf" data-group="13" data-atomic-weight="251.00" data-atomic-number="98"
+			data-name="Californium" data-description="Actinide">
+			<span class="symbol">Cf</span>
+		</div>
+
+		<div class="element" id="Es" data-group="13" data-atomic-weight="252.00" data-atomic-number="99"
+			data-name="Einsteinium" data-description="Actinide">
+			<span class="symbol">Es</span>
+		</div>
+
+		<div class="element" id="Fm" data-group="13" data-atomic-weight="257.00" data-atomic-number="100"
+			data-name="Fermium" data-description="Actinide">
+			<span class="symbol">Fm</span>
+		</div>
+
+		<div class="element" id="Md" data-group="13" data-atomic-weight="258.00" data-atomic-number="101"
+			data-name="Mendelevium" data-description="Actinide">
+			<span class="symbol">Md</span>
+		</div>
+
+		<div class="element" id="No" data-group="13" data-atomic-weight="259.00" data-atomic-number="102"
+			data-name="Nobelium" data-description="Actinide">
+			<span class="symbol">No</span>
+		</div>
+
+		<div class="element" id="Lr" data-group="13" data-atomic-weight="262.00" data-atomic-number="103"
+			data-name="Lawrencium" data-description="Actinide">
+			<span class="symbol">Lr</span>
+		</div>
+
+		<div class="element" id="Rf" data-group="13" data-atomic-weight="267.00" data-atomic-number="104"
+			data-name="Lawrencium" data-description="Transition Metal">
+			<span class="symbol">Rf</span>
+		</div>
+
+		<div class="element" id="Db" data-group="13" data-atomic-weight="262.00" data-atomic-number="105"
+			data-name="Dubnium" data-description="Transition Metal">
+			<span class="symbol">Db</span>
+		</div>
+
+		<div class="element" id="Sg" data-group="13" data-atomic-weight="269.00" data-atomic-number="106"
+			data-name="Seaborgium" data-description="Transition Metal">
+			<span class="symbol">Sg</span>
+		</div>
+
+		<div class="element" id="Bh" data-group="13" data-atomic-weight="264.00" data-atomic-number="107"
+			data-name="Bohrium" data-description="Transition Metal">
+			<span class="symbol">Bh</span>
+		</div>
+
+		<div class="element" id="Hs" data-group="13" data-atomic-weight="269.00" data-atomic-number="108"
+			data-name="Hassium" data-description="Transition Metal">
+			<span class="symbol">Hs</span>
+		</div>
+
+		<div class="element" id="Mt" data-group="13" data-atomic-weight="278.00" data-atomic-number="109"
+			data-name="Meitnerium" data-description="Unknown Properties">
+			<span class="symbol">Mt</span>
+		</div>
+
+		<div class="element" id="Ds" data-group="13" data-atomic-weight="281.00" data-atomic-number="110"
+			data-name="Darmstadtium" data-description="Unknown Properties">
+			<span class="symbol">Ds</span>
+		</div>
+
+		<div class="element" id="Rg" data-group="13" data-atomic-weight="282.00" data-atomic-number="111"
+			data-name="Roentgenium" data-description="Unknown Properties">
+			<span class="symbol">Rg</span>
+		</div>
+
+		<div class="element" id="Cn" data-group="13" data-atomic-weight="285.00" data-atomic-number="112"
+			data-name="Copernicium" data-description="Unknown Properties">
+			<span class="symbol">Cn</span>
+		</div>
+
+		<div class="element" id="Nh" data-group="13" data-atomic-weight="286.00" data-atomic-number="113"
+			data-name="Nihonium" data-description="Unknown Properties">
+			<span class="symbol">Nh</span>
+		</div>
+
+		<div class="element" id="Fl" data-group="13" data-atomic-weight="289.00" data-atomic-number="114"
+			data-name="Flerovium" data-description="Unknown Properties">
+			<span class="symbol">Fl</span>
+		</div>
+
+		<div class="element" id="Mc" data-group="13" data-atomic-weight="289.01" data-atomic-number="115"
+			data-name="Moscovium" data-description="Unknown Properties">
+			<span class="symbol">Ac</span>
+		</div>
+
+		<div class="element" id="Lv" data-group="13" data-atomic-weight="293.00" data-atomic-number="116"
+			data-name="Livermorium" data-description="Unknown Properties">
+			<span class="symbol">Lv</span>
+		</div>
+
+		<div class="element" id="Ts" data-group="13" data-atomic-weight="294.00" data-atomic-number="117"
+			data-name="Tennessine" data-description="Unknown Properties">
+			<span class="symbol">Ts</span>
+		</div>
+
+		<div class="element" id="Og" data-group="13" data-atomic-weight="294.01" data-atomic-number="118"
+			data-name="Oganesson" data-description="Unknown Properties">
+			<span class="symbol">Og</span>
+		</div>
+
+	</div>
+	<div class="element-details" id="element-details">
+		<div class="element-details-content">
+			<div class="element-details-header">
+				<span class="element-details-symbol"></span>
+				<span class="element-details-name"></span>
+				<span class="element-details-close"></span>
+			</div>
+
+			<div class="element-details-body">
+				<p class="element-details-atomic-number"></p>
+				<p class="element-details-atomic-weight"></p>
+				<p class="element-details-description"></p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
