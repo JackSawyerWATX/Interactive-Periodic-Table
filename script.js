@@ -34,6 +34,6 @@ elements.forEach(element => {
     });
 });
 
-elementDetails.addEventListener('click', () => {
+elementDetails.addEventListener('onclick', () => {
     hideElementDetails();
 });
